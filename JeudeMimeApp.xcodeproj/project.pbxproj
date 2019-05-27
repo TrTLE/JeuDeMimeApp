@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841553A3229C09F800A9E6EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841553A2229C09F800A9E6EE /* HomeViewController.swift */; };
 		84DAD259229BC7FA000403D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAD258229BC7FA000403D1 /* AppDelegate.swift */; };
 		84DAD25B229BC7FA000403D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAD25A229BC7FA000403D1 /* ViewController.swift */; };
 		84DAD25E229BC7FA000403D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DAD25C229BC7FA000403D1 /* Main.storyboard */; };
 		84DAD260229BC7FA000403D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DAD25F229BC7FA000403D1 /* Assets.xcassets */; };
 		84DAD263229BC7FA000403D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DAD261229BC7FA000403D1 /* LaunchScreen.storyboard */; };
+		84DAD26C229BC84F000403D1 /* CoreJeuDeMime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAD26B229BC84F000403D1 /* CoreJeuDeMime.swift */; };
+		84DAD26E229BC96A000403D1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAD26D229BC96A000403D1 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841553A2229C09F800A9E6EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84DAD255229BC7FA000403D1 /* JeudeMimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeudeMimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DAD258229BC7FA000403D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DAD25A229BC7FA000403D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		84DAD25F229BC7FA000403D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DAD262229BC7FA000403D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DAD264229BC7FA000403D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DAD26B229BC84F000403D1 /* CoreJeuDeMime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJeuDeMime.swift; sourceTree = "<group>"; };
+		84DAD26D229BC96A000403D1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		84DAD257229BC7FA000403D1 /* JeudeMimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				84DAD26A229BC81C000403D1 /* Core */,
 				84DAD258229BC7FA000403D1 /* AppDelegate.swift */,
 				84DAD25A229BC7FA000403D1 /* ViewController.swift */,
+				841553A2229C09F800A9E6EE /* HomeViewController.swift */,
 				84DAD25C229BC7FA000403D1 /* Main.storyboard */,
 				84DAD25F229BC7FA000403D1 /* Assets.xcassets */,
 				84DAD261229BC7FA000403D1 /* LaunchScreen.storyboard */,
 				84DAD264229BC7FA000403D1 /* Info.plist */,
 			);
 			path = JeudeMimeApp;
+			sourceTree = "<group>";
+		};
+		84DAD26A229BC81C000403D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84DAD26B229BC84F000403D1 /* CoreJeuDeMime.swift */,
+				84DAD26D229BC96A000403D1 /* Player.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DAD26E229BC96A000403D1 /* Player.swift in Sources */,
 				84DAD25B229BC7FA000403D1 /* ViewController.swift in Sources */,
 				84DAD259229BC7FA000403D1 /* AppDelegate.swift in Sources */,
+				84DAD26C229BC84F000403D1 /* CoreJeuDeMime.swift in Sources */,
+				841553A3229C09F800A9E6EE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
