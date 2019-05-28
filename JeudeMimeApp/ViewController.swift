@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ui_matcheLabel: UILabel!
     private var game:CoreJeuDeMime = CoreJeuDeMime()
     private var nbMatchesToPlay: Int = 1
     @IBOutlet weak var ui_NbMatchesStepper: UIStepper!
@@ -27,6 +28,12 @@ class ViewController: UIViewController {
         ui_nbMatchesToPlay.text = "1"
         ui_NbMatchesLabel.text = String.init(game.getNbMatchesleft())
         nbMatchesToPlay = 1
+        ui_matcheLabel.text = game.getNbMatchesleft() > 1 ? "Allumette" : "Allumettes"
+        
+        /*
+         Ternaire
+        moyenne = note < 10 ? false : true
+        */
     }
     
     //AJOUTER LA GESTION DU NOMBRE D'ALLUMETTE SI RESTE 3 2 ALLUMETTES
@@ -56,7 +63,7 @@ class ViewController: UIViewController {
             //              OU
             //COMMENT UTILISER E CODE DU BOUTON RETOUR PRÉSENT DANS LE NAVIGATIONITEM
             let StopAction = UIAlertAction(title: "TERMINÉ", style: .cancel) { (_) in
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
             }
             
             //Terminer la partie et revenir à l'écran d'acceuil
@@ -65,10 +72,8 @@ class ViewController: UIViewController {
             present(AlertVC, animated: true, completion: nil)
         }
     }
+
     
-    @IBAction func TestDismissButtonTouched(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
     //EXEMPLE D'UTILISATION DES ALERTS
     
     /*
